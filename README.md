@@ -1,3 +1,5 @@
 ## Список файлов в репозитории ##
 
-Task 1 (TwoSum) - file TwoSum.java (Easy)
+| Номер |    Название   | Filename | Level |
+| -------  |    --------        | ----------  | ------- |
+|   1   | Two Sum    | TwoSum.java  | Easy    |
