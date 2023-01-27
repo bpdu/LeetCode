@@ -9,8 +9,14 @@ public class PalindromeNumber {
     public static void main(String[] args) {
     }
 
-    public static boolean isPalindromeNumber(int number) {
+    //Using int to String conversion
+    /* public static boolean isPalindrome(int number) {
         StringBuilder stringBuilder = new StringBuilder(Integer.toString(number));
         return Integer.toString(number).equalsIgnoreCase(stringBuilder.reverse().toString());
+    }*/
+
+    //Without int to String conversion
+    public static boolean isPalindrome(int number) {
+        return true;
     }
 }

@@ -8,8 +8,8 @@ class PalindromeNumberTest {
 
     @Test
     void isPalindromeNumber() {
-        assertTrue(PalindromeNumber.isPalindromeNumber(121));
-        assertFalse(PalindromeNumber.isPalindromeNumber(-121));
-        assertFalse(PalindromeNumber.isPalindromeNumber(10));
+        assertTrue(PalindromeNumber.isPalindrome(121));
+        assertFalse(PalindromeNumber.isPalindrome(-121));
+        assertFalse(PalindromeNumber.isPalindrome(10));
     }
 }
