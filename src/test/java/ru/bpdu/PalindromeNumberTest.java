@@ -11,5 +11,7 @@ class PalindromeNumberTest {
         assertTrue(PalindromeNumber.isPalindrome(121));
         assertFalse(PalindromeNumber.isPalindrome(-121));
         assertFalse(PalindromeNumber.isPalindrome(10));
+        assertTrue(PalindromeNumber.isPalindrome(1));
+
     }
 }
