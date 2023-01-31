@@ -2,6 +2,7 @@ package ru.bpdu;
 
 import java.util.HashMap;
 import java.util.Map;
+import java.util.Stack;
 
 /**
  * Given a string s containing just the characters '(', ')', '{', '}', '[' and ']', determine if the input string
@@ -14,7 +15,8 @@ import java.util.Map;
  */
 
 public class ValidParentheses {
-    public static Map<String, String> bracketTypes = new HashMap<>() {{
+    //O(N^2)
+    /*public static Map<String, String> bracketTypes = new HashMap<>() {{
         put("(", ")");
         put("{" , "}");
         put("[" , "]");
@@ -74,5 +76,35 @@ public class ValidParentheses {
             if (isParenthesesValid(s.substring(0, i)) && isParenthesesValid(s.substring(i, s.length()))) return true;
         }
         return false;
+    }*/
+
+    //O(N)
+    public static boolean isValid(String s) {
+        Stack<Character> stack = new Stack<>();
+        for (char c : s.toCharArray()) {
+            switch (c) {
+                case '(':
+                case '{':
+                case '[':
+                    stack.push(c);
+                    break;
+                case ')':
+                    if (stack.isEmpty() || stack.pop() != '(') {
+                        return false;
+                    }
+                    break;
+                case '}':
+                    if (stack.isEmpty() || stack.pop() != '{') {
+                        return false;
+                    }
+                    break;
+                case ']':
+                    if (stack.isEmpty() || stack.pop() != '[') {
+                        return false;
+                    }
+                    break;
+            }
+        }
+        return stack.isEmpty();
     }
 }
