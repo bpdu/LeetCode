@@ -15,25 +15,43 @@ public class RemoveElement {
     public static void main(String[] args) {
     }
 
-    public static int removeElement(int[] nums, int val) {
+    //O(N^2)
+/*    public static int removeElement(int[] nums, int val) {
         if (nums.length == 0) return 0;
         if ((nums.length == 1) && (nums[0] == val)) {
             nums[0] = 0;
             return 0;
         }
         int p = 0;
-        for (int i = 0; i < nums.length - 1; i++) {
-            while (nums[i] == val) {
+        int l = nums.length;
+        for (int i = 0; i < l; i++) {
+            int k = 0;
+            while (nums[i] == val && i < l - p) {
                 for (int j = i + 1; j < nums.length; j++) {
                     nums[j - 1] = nums[j];
+                    k++;
                 }
-                if (i == nums.length - 1) nums[i] = 0;
-                nums[nums.length - 1] = 0;
+                if (k != 0) nums[l - 1] = 0;
                 p++;
             }
 
         }
         return nums.length - p;
+    }*/
+
+    //O(N)
+    public static int removeElement(int[] nums, int val) {
+        int i = 0;
+        for (int j = 0; j < nums.length; j++) {
+            if (nums[j] != val) {
+                int temp = nums[i];
+                nums[i] = nums[j];
+                nums[j] = temp;
+                i++;
+            }
+        }
+        return i;
     }
 
-}
+
+    }
