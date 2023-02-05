@@ -9,5 +9,6 @@
 | 5   | 20         | Valid Parentheses     | ValidParentheses.java                | Easy  |
 | 6   | 26         | Remove Duplicates from Sorted Array | RemoveDuplicatesFromSortedArray.java | Easy  |   
 | 7   | 27         | Remove Element        | RemoveElement.java                   | Easy  |  
-| 8   | 35          | Search Insert Position                      | SearchInsertPosition.java            | Easy  |  
+| 8   | 35         | Search Insert Position | SearchInsertPosition.java            | Easy  |  
+| 9   | 58         | Length of Last Word                      | LengthOLastWord.java                 | Easy  |  
 
