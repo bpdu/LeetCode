@@ -1,7 +1,7 @@
 package ru.bpdu;
 
 import java.util.ArrayList;
-import java.util.Arrays;
+import java.util.Collections;
 import java.util.List;
 
 /**
@@ -19,7 +19,15 @@ public class MergeSortedArray {
 
     public static void merge(int[] nums1, int m, int[] nums2, int n) {
         List<Integer> list = new ArrayList<>();
-        list.addAll(Arrays.copyOf(nums1, m, int[]));
-        list.addAll(nums2);
+        for (int i = 0; i < m; i++) {
+            list.add(nums1[i]);
+        }
+        for (int j = 0; j < n; j++) {
+            list.add(nums2[j]);
+        }
+        Collections.sort(list);
+        for (int k = 0; k < m + n; k++) {
+            nums1[k] = list.get(k);
+        }
     }
 }
