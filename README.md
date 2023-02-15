@@ -16,5 +16,7 @@
 | 12    | 67           | Add binary                          | AddBinary.java                         | Easy   |
 | 13    | 69           | SqrtX                               | SqrtX.java                             | Easy   |
 | 14    | 70           | Climbing Stairs                     | ClimbingStairs.java                    | Easy   |
+| 15    | 83           | Merge Sorted Array                  | MergeSortedArray.java                  | Easy   |
+| 16    | 88           | Remove Duplicates from Sorted List  | RemoveDuplicatesFromSortedList.java    | Easy   |
 | ----- | ------------ | ----------------------------------- | -------------------------------------- | ------ |
 
