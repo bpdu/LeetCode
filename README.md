@@ -18,5 +18,6 @@
 | 14    | 70           | Climbing Stairs                     | ClimbingStairs.java                    | Easy   |
 | 15    | 83           | Merge Sorted Array                  | MergeSortedArray.java                  | Easy   |
 | 16    | 88           | Remove Duplicates from Sorted List  | RemoveDuplicatesFromSortedList.java    | Easy   |
+| 17    | 136          | Single number                       | SingleNumber.java                      | Easy   |
 | ----- | ------------ | ----------------------------------- | -------------------------------------- | ------ |
 
