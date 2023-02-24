@@ -12,7 +12,7 @@ package ru.bpdu;
  * Return k after placing the final result in the first k slots of nums.
  */
 
-public class Remove_Duplicates_From_Sorted_Array {
+public class RemoveDuplicatesFromSortedArray {
     public static void main(String[] args) {
     }
 
