@@ -19,6 +19,7 @@
 | 15  | 83              | Merge Sorted Array                  | MergeSortedArray.java                | Easy  |
 | 16  | 88              | Remove Duplicates from Sorted List  | RemoveDuplicatesFromSortedList.java  | Easy  |
 | 17  | 94              | Binary Tree Inorder Traversal       | BinaryTreeInorderTraversal.java      | Easy  |
-| 18  | 136             | Single number                       | SingleNumber.java                    | Easy  |
-| 19  | 202             | Happy number                        | HappyNumber.java                     | Easy  |
+| 18  | 100             | Same Tree                           | SameTree.java                        | Easy  |
+| 19  | 136             | Single number                       | SingleNumber.java                    | Easy  |
+| 20  | 202             | Happy number                        | HappyNumber.java                     | Easy  |
 
