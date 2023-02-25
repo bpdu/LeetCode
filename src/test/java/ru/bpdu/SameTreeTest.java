@@ -8,14 +8,16 @@ class SameTreeTest {
 
     @Test
     void isSameTree() {
-/*        assertTrue(SameTree.isSameTree(new SameTree.TreeNode(1,
+/*        assertTrue(SameTree.isSameTree(
+                new SameTree.TreeNode(1,
                         new SameTree.TreeNode(2, null, null),
                         new SameTree.TreeNode(3, null, null)),
                 new SameTree.TreeNode(1,
                         new SameTree.TreeNode(2, null, null),
                         new SameTree.TreeNode(3, null, null))));*/
 
-        assertFalse(SameTree.isSameTree(new SameTree.TreeNode(1,
+        assertFalse(SameTree.isSameTree(
+                new SameTree.TreeNode(1,
                         new SameTree.TreeNode(2, null, null),
                         null),
                 new SameTree.TreeNode(1,

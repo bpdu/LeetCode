@@ -9,25 +9,12 @@ import java.util.List;
  */
 public class SameTree {
 
-    static class TreeNode {
-        int val;
-        TreeNode left;
-        TreeNode right;
-        TreeNode() {}
-        TreeNode(int val) { this.val = val; }
-        TreeNode(int val, TreeNode left, TreeNode right) {
-            this.val = val;
-            this.left = left;
-            this.right = right;
-        }
-    }
     public static boolean isSameTree(TreeNode p, TreeNode q) {
-        List<String> pValue = btValue(p);
-        List<String> qValue = btValue(p);
-        return pValue.containsAll(qValue) && qValue.containsAll(pValue);
+        return btValue(p).equals(btValue(q));
     }
 
     public static List<String> btValue(TreeNode root) {
+        if (root == null) return new ArrayList<>();
         List<String> nodeValues = new ArrayList<>();
         if (root.left == null && root.right == null) {
             nodeValues.add(String.valueOf(root.val));
@@ -52,6 +39,24 @@ public class SameTree {
     public static void main(String[] args) {
     }
 
+    static class TreeNode {
+        int val;
+        TreeNode left;
+        TreeNode right;
+
+        TreeNode() {
+        }
+
+        TreeNode(int val) {
+            this.val = val;
+        }
+
+        TreeNode(int val, TreeNode left, TreeNode right) {
+            this.val = val;
+            this.left = left;
+            this.right = right;
+        }
+    }
 
 
 }
